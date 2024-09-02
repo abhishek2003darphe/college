@@ -1,0 +1,9 @@
+ in git delete your repo or folder using command 
+
+------------------------------------------------------------------------------------------------------------------------------------
+1)  git clone and <folder URL paset>
+2) git remote -v :- to delete a directory in git bash you can use the 'rm' command 'r' (recursive) option 
+3) ls- l show all list in your floder directory or files
+4) git rm -r <file name> 
+5) git commit -m "remove folder"
+6) git push origin main 
