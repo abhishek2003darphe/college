@@ -7,3 +7,368 @@
 4) git rm -r <file name> 
 5) git commit -m "remove folder"
 6) git push origin main 
+
+----------------------------------------------------------
+e'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git remote -v
+origin  https://github.com/abhishek2003darphe/college.git (fetch)
+origin  https://github.com/abhishek2003darphe/college.git (push)
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ ls -l
+total 354
+-rw-r--r-- 1 Abishek 197121  31733 Sep  1 13:03 'Assigment 1 Web desing  and development.docx'
+-rw-r--r-- 1 Abishek 197121 144309 Sep  1 12:47 'Assigment 1 Web desing  and development.pdf'
+-rw-r--r-- 1 Abishek 197121 177576 Sep  1 13:28 'Assignment  git 1.pdf'
+-rw-r--r-- 1 Abishek 197121      9 Aug 28 10:18  README.md
+-rw-r--r-- 1 Abishek 197121     24 Aug 29 09:42  doc1.txt.txt
+-rw-r--r-- 1 Abishek 197121      0 Aug 28 10:19  index.html
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git rm -r 'index.html'
+rm 'index.html'
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git commint -m "remove folder"
+git: 'commint' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git commit -m "remove folder"
+[main d700c70] remove folder
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 index.html
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$  git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 219 bytes | 219.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/abhishek2003darphe/college.git
+   fbf54cc..d700c70  main -> main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git show
+commit d700c7077215b04122d30cbe83f78a9693895c37 (HEAD -> main, origin/main, origin/HEAD)
+Author: abhi <abhishekgithub2003@gmail.com>
+Date:   Mon Sep 2 20:16:39 2024 +0530
+
+    remove folder
+
+diff --git a/index.html b/index.html
+deleted file mode 100644
+index e69de29..0000000
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git clonegit@github.com:abhishek2003darphe/college.git
+git: 'clonegit@github.com:abhishek2003darphe/college.git' is not a git command. See 'git --help'.
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git clone git@github.com:abhishek2003darphe/college.git
+Cloning into 'college'...
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git .add
+git: '.add' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git add .
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git commit -m "just added a file"
+[main da7d0d2] just added a file
+ 5 files changed, 10 insertions(+)
+ create mode 100644 Assigment 1 Web desing  and development.docx
+ create mode 100644 Assigment 1 Web desing  and development.pdf
+ create mode 100644 Assignment  git 1.pdf
+ create mode 100644 git_All_command.txt.txt
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git  push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 321.54 KiB | 32.15 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/abhishek2003darphe/college.git
+   d700c70..da7d0d2  main -> main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git pull origin main
+From https://github.com/abhishek2003darphe/college
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ branch
+bash: branch: command not found
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git branch
+  dev2
+  dev3
+* main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git branch abhi
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git branch abhi
+fatal: a branch named 'abhi' already exists
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git branch
+  abhi
+  dev2
+  dev3
+* main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git stustus
+git: 'stustus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git commit -m "created new branches"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git push origin main
+Everything up-to-date
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git branch
+  abhi
+  dev2
+  dev3
+* main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git checkout abhi
+Switched to branch 'abhi'
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git branch
+* abhi
+  dev2
+  dev3
+  main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git add .
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git commit -m "add branch dev"
+On branch abhi
+nothing to commit, working tree clean
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git push origin dev
+error: src refspec dev does not match any
+error: failed to push some refs to 'https://github.com/abhishek2003darphe/college.git'
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git push origin dev
+error: src refspec dev does not match any
+error: failed to push some refs to 'https://github.com/abhishek2003darphe/college.git'
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git push origin dev4
+error: src refspec dev4 does not match any
+error: failed to push some refs to 'https://github.com/abhishek2003darphe/college.git'
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git push origin dev
+error: src refspec dev does not match any
+error: failed to push some refs to 'https://github.com/abhishek2003darphe/college.git'
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git push origin abhi
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'abhi' on GitHub by visiting:
+remote:      https://github.com/abhishek2003darphe/college/pull/new/abhi
+remote:
+To https://github.com/abhishek2003darphe/college.git
+ * [new branch]      abhi -> abhi
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git status
+On branch abhi
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        dev.txt.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git add .
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git commit -m "add a file dev"
+[abhi 5fdfa00] add a file dev
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 dev.txt.txt
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git push origin dev
+error: src refspec dev does not match any
+error: failed to push some refs to 'https://github.com/abhishek2003darphe/college.git'
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git push origin abhi
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 267 bytes | 267.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/abhishek2003darphe/college.git
+   da7d0d2..5fdfa00  abhi -> abhi
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git branch
+  abhi
+  dev2
+  dev3
+* main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git checkout abhi
+Switched to branch 'abhi'
+---------------------------------------------------------------------------
+delete the branch 
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ ls
+'Assigment 1 Web desing  and development.docx'  'Assigment 1 Web desing  and development.pdf'  'Assignment  git 1.pdf'   README.md   dev.txt.txt   doc1.txt.txt   git_All_command.txt.txt
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git branch
+* abhi
+  dev2
+  dev3
+  main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git branch -d dev2 dev3
+Deleted branch dev2 (was fbf54cc).
+Deleted branch dev3 (was fbf54cc).
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git branch
+* abhi
+  main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git push
+fatal: The current branch abhi has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin abhi
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (abhi)
+$ git checkout maIN
+Switched to branch 'maIN'
+M       git_All_command.txt.txt
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (maIN)
+$ git branch
+  abhi
+  main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (maIN)
+$ git checkout main
+Switched to branch 'main'
+M       git_All_command.txt.txt
+Your branch is up to date with 'origin/main'.
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git branch
+  abhi
+* main
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ git push
+fatal: unable to access 'https://github.com/abhishek2003darphe/college.git/': Could not resolve host: github.com
+
+Abishek@abhishek MINGW64 ~/Desktop/Pracctice/college (main)
+$ ^C
+
+
+
+
+
+
+
+
+
+
+
+
+
